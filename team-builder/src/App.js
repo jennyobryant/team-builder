@@ -1,6 +1,7 @@
 import React, {useState} from 'react'; //1. import useState
 import logo from './logo.svg';
 import './App.css';
+import Form from './Form.js'; 
 
 function App() {
   const [members, setMembers] = useState([{
@@ -25,6 +26,9 @@ function App() {
     </div>
 
     )}
+
+<Form members={members} setMembers={setMembers} />
+
 
 {
 
